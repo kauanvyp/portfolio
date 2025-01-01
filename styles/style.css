@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root{
+    --cor-fundo: #0F0E0E; /* Define a cor de fundo da página como preto (#000000) */
+    --cor-letra: #EEEEEE; /* Define a cor do texto principal como um tom de cinza claro (#F6F6F6) */
+    --cor-letrasecudaria: #8B9A46; /* Define a cor do texto secundário como um tom de azul claro (#22D4FD) */
+    --cor-hover: #541212; /* Define a cor de fundo quando o mouse passa sobre um elemento (cinza escuro) */
+    --fonte-principal: "Raleway", serif; /* Define a fonte principal como "Raleway", com fallback para fontes serifadas */
+    --fonte-secundaria: "Titillium Web", serif; /* Define a fonte secundária como "Titillium Web", com fallback para fontes serifadas */
+}
+
+/* Resetando margens e preenchimentos para garantir um layout consistente */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral do body da página */
+body{
+    box-sizing: border-box; /* Faz com que o padding e border sejam inclusos nas medidas */
+    background-color: var(--cor-fundo); /* Cor de fundo da página */
+    color:var(--cor-letra) /* Cor do texto */
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%; /* Espaçamento superior de 2% e à esquerda de 15% */
+}
+
+.cabecalho__navegacao{
+    display: flex; /* Define um layout flexível para os itens da navegação */
+    gap: 80px; /* Espaçamento de 80px entre os itens */
+    
+}
+
+.cabecalho__navegacao__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    color:var(--cor-letrasecudaria); /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.cyan{
+    color:var(--cor-letrasecudaria); /* Classe para aplicar a cor cyan */
+}
+
+.apresentacao{
+    padding: 5% 15%; /* Espaçamento superior de 5% e laterais de 15% */
+    display: flex; /* Layout flexível para os itens da apresentação */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: space-between; /* Espaça os itens de forma igual entre eles */
+    gap:82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%; /* Define a largura da seção de conteúdo */
+    display: flex; /* Layout flexível para o conteúdo */
+    flex-direction: column; /* Alinha os itens na vertical */
+    gap: 40px; /* Espaçamento de 40px entre os itens */
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem; /* Tamanho do título */
+    font-family: var(--fonte-principal);
+}
+
+.apresentacao__conteudo__p{
+    font-size: 1.5rem; /* Tamanho do parágrafo */
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links{
+    display: flex; /* Layout flexível para os links */
+    flex-direction: column; /* Alinha os links em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    text-align: center; /* Centraliza o texto dentro dos links */
+    gap: 16px; /* Espaçamento de 16px entre os links */
+}
+
+.apresentacao__redes{
+    font-size: 1.31rem; /* Tamanho do parágrafo */
+    font-family: var(--fonte-principal)
+}
+
+.apresentacao__links__link{
+    display: flex; /* Layout flexível para os links dentro da apresentação */
+    justify-content: center; /* Centraliza os itens dentro do link */
+    align-items: center; /* Garante que o conteúdo do link (ícone + texto) seja centralizado */
+    gap: 16px; /* Espaçamento de 16px entre o ícone e o texto */
+    border: 2px solid var(--cor-letrasecudaria); /* Borda azul clara ao redor do link */
+    width: 50%; /* Largura do link */
+    text-align: center; /* Alinha o texto do link ao centro */
+    border-radius: 8px; /* Arredonda os cantos da borda */
+    font-weight: 600; /* Peso da fonte */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    padding: 21.5px 0; /* Espaçamento interno (superior e inferior) do link */
+    text-decoration: none; /* Remove a decoração (sublinhado) do link */
+    color: #ffffff; /* Cor do texto dentro do link */
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__link:hover{
+    background-color: var(--cor-hover); /* Muda a cor de fundo para cinza quando o mouse passa por cima */
+}
+
+.apresentacao__imagem{
+    width: 50%
+}
+
+.rodape{
+    background-color:var(--cor-letrasecudaria); /* Cor de fundo do rodapé */
+    color: var(--cor-fundo); /* Cor do texto no rodapé */
+    padding: 24px; /* Espaçamento interno do rodapé */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    font-family: var(--fonte-secundaria);
+}
+
+@media (max-width: 1200px){
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__navegacao{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+        }
+    
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+    }
+    
