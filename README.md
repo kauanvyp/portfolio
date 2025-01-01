@@ -24,7 +24,7 @@ Este portfólio foi criado para demonstrar os meus conhecimentos. Ele inclui inf
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/portfolio-alura.git
+   (https://github.com/kauanvyp/portfolio.git)
    ```
 2. Abra o arquivo `index.html` no navegador para visualizar o portfólio.
 3. Altere os arquivos conforme suas necessidades para personalização.
